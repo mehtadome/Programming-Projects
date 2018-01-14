@@ -11,33 +11,33 @@
 #include <iostream>
 #include <vector>
 
-int *Book::getID()
+int *Book::getID() // return ID
 {
     return id;
 }
-string *Book::getDescription()
+string *Book::getDescription() // return description
 {
     return description;
 }
 
-char *Book::getAvailability()
+char *Book::getAvailability() // return availability
 {
     return availability;
 }
 
-char *Book::checkIn()
+char *Book::checkIn() // by checking in the book, it is then available to be called
 {
     availability = "Available";
     return availability;
 }
 
-char *Book::checkOut()
+char *Book::checkOut() // by checking out the book, it is no longer available to be called
 {
     availability = "Not Available";
     return availability;
 }
 
-bool Book::setAvailability(char* available)
+bool Book::setAvailability(char* available) // if both parameters are not NULL, it will copy the string for those parameters
 {
     if(availability != NULL && available != NULL)
     {
@@ -45,12 +45,12 @@ bool Book::setAvailability(char* available)
     }
     return true;
 }
-void Book::printBookInfo()
+void Book::printBookInfo() // prints the book info a.k.a ID, book description, and availability when called
 {
     cout << "ID(" << id << ") TITLE(" << description << ") STATUS(" << availability << ").\n";
 }
 
-void Book::getOnlyAvailableBooks(vector<string *> &pBookObjectsList)
+void Book::getOnlyAvailableBooks(vector<string *> &pBookObjectsList) // if the book is available, it will be called back 
 {
     if(availability = "Available")
     {
