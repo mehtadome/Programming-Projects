@@ -5,6 +5,8 @@
 //  Created by Ruchir Mehta on 7/21/16.
 //  Copyright © 2016 Rucker. All rights reserved.
 //
+//
+//  Book class purpose: Creates many methods that will be further edited in Book.cpp
 
 #ifndef Book_hpp
 #define Book_hpp
