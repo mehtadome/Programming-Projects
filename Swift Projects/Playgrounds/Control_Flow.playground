@@ -1,0 +1,48 @@
+// Control Flow Concepts
+
+import UIKit
+
+var str = "Hello, playground"
+
+let truckSpeed = 45
+let lamboSpeed = 120
+
+var mySpeed: Int
+var myFriendsSpeed  = 0
+mySpeed = 100
+
+if (mySpeed < 70 || myFriendsSpeed >= 90){
+    print("Keep Cruising")
+
+} else if (mySpeed > 90){
+    print("My friend's not on the road anymore and I'm going fast")
+}
+
+else{
+  print("Stop Now")
+    
+}
+
+let isTelevisionOn = true
+
+if isTelevisionOn != true{
+    print("Make sure to turn it off when you're done")
+} else {
+    print("Do you want to use this now?")
+}
+
+let coolBeans = 30
+let hotBeans = 45
+
+var beans: Int
+beans = coolBeans + hotBeans
+
+while (1==1){
+    if (beans == 75){
+        print("You are a success")
+        break
+    } else if (beans == 74){
+        print("You are a failure")
+        break
+    }
+}
