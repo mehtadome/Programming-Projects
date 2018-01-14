@@ -1,0 +1,116 @@
+// Advanced Examples of Function Concepts
+
+import UIKit
+
+var str = "Hello, playground"
+
+func printHelloWorld () {
+    print("Hello World!")
+    print("Hello Class!")
+}
+
+printHelloWorld()
+printHelloWorld()
+printHelloWorld()
+
+func bubz () {
+    print("me gusta bubz")
+}
+
+func printNumberSupplied(number: Int) {
+    print("The number is \(number)")
+    print("The number times 3 is \(number*3)")
+    var numberTimesTwo = number * 2
+    numberTimesTwo *= 2
+}
+
+printNumberSupplied(3)
+
+func turnOffAppliance(applianceName: String, isOn: Bool) {
+    if isOn{
+        print("Please turn off the \(applianceName).")
+    } else {
+        print("I actually turned the \(applianceName) off.")
+    }
+}
+
+turnOffAppliance("microwave", isOn: true)
+
+func additionFunction(firstArgument: Int, secondArgument: Int) -> Int{
+    
+    let sumOfArguments = firstArgument + secondArgument
+    
+    
+    
+    return sumOfArguments
+}
+
+var additionAnswerOfInteger = additionFunction(2, secondArgument: 4)
+let finalAnswer = additionFunction(additionAnswerOfInteger, secondArgument: 5)
+print(finalAnswer)
+
+
+func HelloWorldString() -> String {
+    
+    printHelloWorld()
+    
+    return "Hello World!!!"
+}
+
+var elloWorld = HelloWorldString()
+elloWorld = elloWorld + "!!"
+print(elloWorld)
+
+
+func boo(booName: String, isON: Bool){
+    if isON{
+        print("Please scare \(booName).")
+    } else {
+        print("Please don't scare \(booName).")
+    }
+}
+
+boo("children", isON: true)
+
+
+
+func subtractionFunction(firstArgument: Int, secondArgument: Int) -> Int{
+    
+    let sumOfArguments = firstArgument - secondArgument
+    
+    
+    return sumOfArguments
+}
+var subtrationAnswerOfInteger = subtractionFunction(99, secondArgument: 5)
+let rinalAnswer = subtractionFunction(subtrationAnswerOfInteger, secondArgument: 10)
+print(rinalAnswer)
+
+
+func worldString() -> String {
+    
+    printHelloWorld()
+    
+    return "Hello World"
+}
+
+var world = worldString()
+world = world + "!!"
+print(world)
+
+var additionOfInts = additionFunction(110, secondArgument: 220)
+let final = additionFunction(additionOfInts ,secondArgument: 330)
+print(final)
+
+func helloWorldString () -> String{
+    
+    printHelloWorld()
+    
+    return "Hello World"
+}
+
+var helloWorld = HelloWorldString()
+helloWorld = helloWorld + "!"
+print(helloWorld)
+helloWorld += helloWorld + " jkjkjkjk!"
+print(helloWorld)
+print()
