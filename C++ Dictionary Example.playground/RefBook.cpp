@@ -12,7 +12,7 @@
 
 using namespace std;
 
-void RefBook::printRefBookInfo()
+void RefBook::printRefBookInfo() // prints the below information
 {
     cout << "ID(" << id << ") TITLE(" << description << ") STATUS(" << availability << ") REFERENCE.\n";
 }
