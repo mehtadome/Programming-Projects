@@ -5,6 +5,8 @@
 //  Created by Ruchir Mehta on 7/21/16.
 //  Copyright © 2016 Rucker. All rights reserved.
 //
+//  Purpose of class: make sure that the user inputs in the correct information
+//
 
 #ifndef InvalidItemException_hpp
 #define InvalidItemException_hpp
