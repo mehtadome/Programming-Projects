@@ -1,0 +1,32 @@
+// Playground - noun: a place where people can play
+
+import UIKit
+class PewPew{
+     main(String[]args){
+var str = "Hello, playground"
+
+var intValue = 5
+var doubleValue = 0.5
+
+var sumOfValue = Double(intValue) + doubleValue
+
+var secondDoubleValue = 1.5
+var secondIntValue = 8
+
+var secondSumOfValue = Int(secondDoubleValue) + secondIntValue
+
+    println("HI");
+    
+var[][] bucky = {{6; 7; 8; 9} {10; 11; 12; 13}};
+    System.out.println("Here is the multidimensional array bucky: ");
+    display(bucky);
+}
+
+    void Display(int y[][]){
+        for(int i = 0; i < y.length; i++){
+        for(int x = 0; x < y[i].length; x++){
+                print(y[i][x]+"\t");
+            }
+        println();
+    }
+}
