@@ -9,4 +9,4 @@ Most files are saved under the file name "contents.swift". This is because most 
 XCode Playground is a basic compiler for practicing that presents itself as a good compromise software for storing code of 
 many different languages. 
 
-I also use XCode Playground to store all my code from different projects.
+I also use XCode Playground to store most of my code from different projects.
