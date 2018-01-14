@@ -1,0 +1,14 @@
+// Random Integer Basic Implemented Function Examples
+
+import UIKit
+
+var str = "Hello, playground"
+
+let randomNumber = Int(arc4random_uniform(UInt32(69)))
+print(randomNumber)
+
+let wandomNumber = Int(arc4random_uniform(UInt32(10000)))
+print(wandomNumber)
+
+let random = Int(arc4random_uniform(UInt32(67)))
+print(random)
