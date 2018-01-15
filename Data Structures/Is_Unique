@@ -2,9 +2,9 @@
 
 class Solution:
 
-  def Is_Unique(stringie):
-    for i in stringie:
-      if(stringie[i] == stringie[i + 1]):
+  def Is_Unique(string1):
+    for i in string1:
+      if(string1[i] == string1[i + 1]):
         return False
       else:
         return True
