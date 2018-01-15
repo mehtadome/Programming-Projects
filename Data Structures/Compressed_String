@@ -9,7 +9,7 @@ class Solution:
 
       firstElement += string1[0]
 
-      for i in range(len(string1) - 1): // will iterate through loop except for last one
+      for i in range(len(string1) - 1): # will iterate through loop except for last one
           if (string1[i] == string1[i + 1]):
               count += 1
           else:
