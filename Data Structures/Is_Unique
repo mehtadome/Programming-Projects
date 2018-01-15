@@ -6,6 +6,7 @@ class Solution:
     for i in stringie:
       if(stringie[i] == stringie[i + 1]):
         return False
-    return True
+      else:
+        return True
 
 # A plus to this solution is a shorter time complexity
