@@ -13,4 +13,4 @@ class Solution:
             return False
   
 # Longer time complexity is a minus to this solution
-# Takes about 400 ms to run (Estimate calculated using FaceBook's CoderPad)
+# Takes about O(n^3)
