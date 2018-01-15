@@ -5,6 +5,8 @@
 //  Created by Ruchir Mehta on 7/21/16.
 //  Copyright © 2016 Rucker. All rights reserved.
 //
+// Purpose of class: Creates methods to be edited in utils.cpp
+//
 
 #ifndef utils_hpp
 #define utils_hpp
