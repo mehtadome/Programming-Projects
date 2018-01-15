@@ -1,0 +1,29 @@
+#1.6 Python | Compress a basic string using the counts of repeated characters.
+
+class Solution:
+
+  def Compressed_String(string1):
+
+      firstElement = " "
+      count = 1
+
+      firstElement += string1[0]
+
+      for i in range(len(string1) - 1): // will iterate through loop except for last one
+          if (string1[i] == string1[i + 1]):
+              count += 1
+          else:
+              if (count > 1):
+                  # if there are no repeats, just ignore it
+                  firstElement += str(count)
+
+              firstElement += string1[i + 1]
+              count = 1
+
+      if (count > 1): // for last one
+          firstElement += str(count)
+      return firstElement  
+
+
+  print Compressed_String("aabbbccccd")
+  # outputs a2b3c4d
