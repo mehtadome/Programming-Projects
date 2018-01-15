@@ -1,0 +1,12 @@
+#Python 3
+#Implement an algorithm that returns True if a string has all unique characters
+
+class Solution:
+
+def Is_Unique(stringie):
+  uniqChar = set()
+  for i in stringie:
+    if (i in uniqChar):
+      return False
+    uniqChar.add(i)
+  return True
