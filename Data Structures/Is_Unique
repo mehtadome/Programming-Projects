@@ -3,11 +3,9 @@
 class Solution:
 
   def Is_Unique(stringie):
-    uniqChar = set()
     for i in stringie:
-      if (i in uniqChar):
+      if(stringie[i] == stringie[i + 1]):
         return False
-      uniqChar.add(i)
     return True
 
 # A plus to this solution is a shorter time complexity
