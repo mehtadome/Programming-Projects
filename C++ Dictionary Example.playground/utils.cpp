@@ -9,7 +9,7 @@
 #include "utils.hpp"
 #include <string>
 
-int stringLength (const char* src) {
+int stringLength (const char* src) { // finds the string length of the user's input
     if (src == NULL)
         return false;
     
@@ -20,7 +20,7 @@ int stringLength (const char* src) {
     return i;
 }
 
-bool stringCopy (const char* src, char* dest) {
+bool stringCopy (const char* src, char* dest) { // copies the string which the user inputted
     if (src == NULL || dest == NULL)
         return false;
     
