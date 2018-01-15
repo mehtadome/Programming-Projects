@@ -3,11 +3,9 @@
 
 class Solution:
 
-  def Is_Unique(string1):
-    for i in range(len(string1)):
-      if (string1[i] == string1[i + 1]):
+   def Is_Unique(string1):
+    for i in string1:
+      if(string1[i] == string1[i + 1]):
         return False
-      elif (string1[i] != string1[i + 1]):
-        return True
   
 # A plus to this solution is a shorter time complexity
