@@ -17,7 +17,7 @@ class RefBook: public Book
 {
 public:
     
-    RefBook(int id, string description);
+    RefBook(int id, string description); // creates method to be edited in RefBook.cpp
     virtual void printRefBookInfo();
     
     
