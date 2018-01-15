@@ -4,7 +4,7 @@ class Solution:
 
   def Compressed_String(string1):
 
-      firstElement = " "
+      firstElement = ""
       count = 1
 
       firstElement += string1[0]
