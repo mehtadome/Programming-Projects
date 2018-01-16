@@ -1,0 +1,13 @@
+#1.3 Python | Create an algorithm that replaces any spaces in a string with "%20"
+
+def spaces(string):
+  space = ""
+  
+  for i in string:
+    if (i == " "):
+      space += "%20"
+    else:
+      space += i
+  return space
+  
+# I believe this will have O(n) time complexity 
