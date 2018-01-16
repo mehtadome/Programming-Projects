@@ -1,0 +1,18 @@
+#1.9 Python | Assuming you have a method isSubstring which checks if one word is a subtring of another and given two strings
+# (s1 and s2), write code to check if s2 is a rotation of s1.
+
+# a fairly simple way to solve the problem:
+def is_rotation(s1, s2):
+  if (s1 in s2):
+    print "yes"
+  else:
+    print "no"
+
+# the more advanced way to solve the problem:
+
+def is_rotation(s1, s2):
+  for i in range(len(s1)):
+    if (s1[i] in s2):
+      print "yes"
+    else:
+      print "no"
