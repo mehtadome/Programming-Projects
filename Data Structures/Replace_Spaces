@@ -1,6 +1,6 @@
 #1.3 Python | Create an algorithm that replaces any spaces in a string with "%20"
 
-def spaces(string):
+def replace_spaces(string):
   space = ""
   
   for i in string:
