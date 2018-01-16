@@ -1,0 +1,37 @@
+#1.7 Python | Given an image represented by an NxN matrix, write a method to rotate the image by 90 degrees.
+# Must be done in place
+
+from copy import deepcopy # Please see bottom for explanation of deepcopy import
+
+def rotate_matrix(matrix, n):
+  resMatrix = deepcopy(matrix) # deepcopy allows for a lists of lists copy
+  for x in range(0, n): # by default, range increments by 1
+    for y in range(n - 1, -1, -1): # for "n-1", since n = 3, it goes down to 2, second "-1" means to go down but not include -1, and the
+                                   # final "-1" means to increment by -1
+      resMatrix[x][n - y - 1] = matrix[y][x] # methodically go through each element in each list of lists and change their locations
+  return resMatrix
+  
+# Code for outputting the rotated matrix:
+n = 3
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+print "Original Matrix is " + str(matrix)
+print "Rotated Matrix is " + str(rotate_matrix(matrix, n))
+  
+# output: 
+# Original Matrix is [[1,2,3], [4,5,6], [7,8,9]]
+# Rotated Matrix is [[7,4,1], [8,5,2], [9,6,3]]
+ 
+  # deepcopy explanation:
+
+  # What we need to do is perform a lists of lists copy, but Python only sees it as lists of list objects. 
+  # If we were to say: 
+  # resMatrix = matrix
+  # It wouldn't work because when the program runs, essentially what happens is 2 different variables are pointed to the same data
+
+  # Also, if, instead, we were to say:
+  # resMatrix = list(matrix)
+  # It still wouldn't work because the lists inside of each list still point to the same memory location
+  # NOTE: It is possible to use a for loop and iterate through each list, but you wouldn't be able to use it if you didn't know 
+  # if the inside lists contained any objects. It'll copy the memory address of the object but not the actual list of objects. 
+
+  # *deepcopy allows for copying lists of lists*
