@@ -15,3 +15,4 @@ def is_rotation(s1, s2):
   else:
     print "Yes, s1 is a rotation of s2"
     
+# Disadvantage to this solution: larger time complexity 
