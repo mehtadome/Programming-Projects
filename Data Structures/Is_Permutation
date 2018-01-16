@@ -14,3 +14,12 @@ class Solution:
   
 # Longer time complexity is a minus to this solution
 # Takes about O(n^3)
+
+# Another way:
+
+def is_perm(str1, str2):
+  if(len(str1) == len(str2) and sorted(str1) == sorted(str2)):
+    return True
+  else:
+    return False
+   
