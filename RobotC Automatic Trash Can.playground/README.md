@@ -9,5 +9,7 @@ The user would toss his/her trash through the basketball hoop, the trash can lid
 trash out.
 
 A sonar sensor was placed in the hoop to determine when the trash fell through the hoop. 
-Two motors attatched to two sliding doors made up the trash can's lid
+
+Two motors attatched to two sliding doors made up the trash can's lid.
+
 One servo motor controlling a trap door to empty the garbage out was placed at the bottom.
