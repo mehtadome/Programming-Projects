@@ -1,4 +1,4 @@
-*Dependencies:*
+# Dependencies:
 XAMPP: https://www.apachefriends.org/download.html
 
 1) Create a folder to place all these files in htdocs in your XAMPP folder. 
