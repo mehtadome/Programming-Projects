@@ -1,0 +1,69 @@
+package func;
+
+public abstract class ComplexDynamicsFunction implements DoubleFunctionOfTwoInts 
+{
+	private final static int	XMIN	= -350;		// dictated by geometry of VizPanel
+	private final static int	XMAX	= +350;
+	private final static int	YMIN	= -250;
+	private final static int	YMAX	= +250;
+
+	private double				realMin;
+	private double				realMax;
+	private double				imMin;
+	private double				imMax;
+	private Complex				juliaConst;			// non-null => Julia set, null => Mandelbrot set
+
+	
+	ComplexDynamicsFunction(double realMin, double realMax, double imMin, double imMax)
+	{
+		this.realMin = realMin;
+		this.realMax = realMax;
+		this.imMin = imMin;
+		this.imMax = imMax;
+	}
+
+	
+	ComplexDynamicsFunction(double realMin, double realMax, double imMin, double imMax, Complex juliaConst)
+	{
+		this.realMin = realMin;
+		this.realMax = realMax;
+		this.imMin = imMin;
+		this.imMax = imMax;
+		this.juliaConst = juliaConst;
+	}
+	
+	
+	Complex xyToComplex(int x, int y)
+	{
+		return new Complex(convert(x, XMIN, XMAX, realMin, realMax), convert(y, YMIN, YMAX, imMin, imMax));
+	}
+	
+	
+	double convert(int cartesian, int cartesianMin, int cartesianMax, double complexMin, double complexMax)
+	{
+		double complexPerCartesian = (complexMax - complexMin) / (cartesianMax - cartesianMin);
+		int deltaCartesian = cartesian - cartesianMin;
+		double complex = complexMin + deltaCartesian*complexPerCartesian;
+		return complex;
+	}
+	
+	
+	@Override
+	public double fOfXY(int x, int y) 
+	{
+		Complex cOriginal = xyToComplex(x, y);
+		Complex c = new Complex(cOriginal);
+		
+		for (int n=1; n<=255; n++)
+		{
+			if (c.norm() >= 2)
+				return n;
+			c = Complex.multiply(c, c);
+			if (juliaConst == null)
+				c = Complex.add(c, cOriginal);
+			else
+				c = Complex.add(c, juliaConst);
+		}
+		return 0;
+	}
+}
