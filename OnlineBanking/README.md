@@ -11,7 +11,7 @@ OnlineBanking has frontend and backend code to make the project run
 XAMPP: https://www.apachefriends.org/download.html
 
 ## Instructions:
-1) Create a folder to place all these files in htdocs in your XAMPP folder. 
+1) Create a folder to place all these files in htdocs in your XAMPP directory. 
 2) Open XAMPP application and start "Apache" and "MySQL"
 3) Head to localhost/yourFolderName/header.php
 
