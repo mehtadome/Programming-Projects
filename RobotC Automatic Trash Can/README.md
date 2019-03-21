@@ -1,5 +1,5 @@
-# The Automatic Trash Can       (Spring 2015)
-The Automatic Trash Can was a project I lead in my sophomore year.
+# The Automatic Trash Can      
+The Automatic Trash Can was a project I lead in my sophomore year of highschool.
 
 We were assigned to make any sort of robotic system that could help out people. Think of it as a helper-bot.
 
