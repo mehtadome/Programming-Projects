@@ -1,3 +1,4 @@
+# EasyC Self-Driving Robot
 The purpose of this project was to construct and program a self-driving robot (car) that can locate a red beacon and turn it off. 
 Then, the robot will locate a green beacon and turn it off. 
 Finally, the robot will exit the arena.
