@@ -17,3 +17,6 @@ The java app will read a fastq file and create a fasta file.
 Records in the fastq might or might not meet some quality threshold, and might or might
 not have unique deflines. Records in the fasta will all meet or exceed a quality threshold,
 and will all have unique deflines.
+
+=======================
+1. Download and run FileConverter.java to test the applications accuracy.
