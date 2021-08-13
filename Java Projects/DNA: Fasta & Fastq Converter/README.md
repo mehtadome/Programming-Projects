@@ -19,4 +19,4 @@ not have unique deflines. Records in the fasta will all meet or exceed a quality
 and will all have unique deflines.
 
 =======================
-1. Download and run FileConverter.java to test the applications accuracy.
+1. Download all files and run DNAGrader.java to test the application's accuracy.
