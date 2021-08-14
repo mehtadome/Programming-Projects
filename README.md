@@ -1,11 +1,7 @@
 # Programming-Examples
-Projects that have helped define me as a software engineer.
+Small, neat projects I partook in either through class or for fun. 
 
-I have experience in Java, Python, PHP, MySQL, Swift, C, C++ 
-  + In many projects including other people, I take the lead and drive the project as head coder and designer
-  + This skill has given me the ability to think on my own 
+I have worked with Java, Python, PHP, MySQL, Swift, C, C++ 
+  + In many projects, I took the lead and drove the project as head coder and designer
+  + This skill has given me the ability to think on my own, self-learn, and adaot where necessary
   
-## Still to come:
-+ Deep learning with Python utilizing **Ubuntu**
-+ Algorithms in Java
-+ My Own Website
